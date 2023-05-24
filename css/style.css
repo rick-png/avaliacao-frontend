@@ -4,12 +4,16 @@
 body {
     font-family: 'lato';
     color: #f1f1f1;
+    background-color: #421a3f;
+    display: flex;
+    flex-direction: column;
 }
 
 /* cabeçalho */
 header {
     width: 100%;
     height: 9rem;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,8 +44,6 @@ header > h1 {
     display: grid;
     grid-template-columns: 10rem 49fr 2fr 49fr 10rem;
     align-items: center;
-
-    background-color: #421a3f;
 }
 .infoPessoal > div:first-child {
     grid-column: 2;
@@ -81,11 +83,9 @@ header > h1 {
 /* section interreses */
 .interesses {
     width: 100%;
-    height: 60vh;
-    display: grid;
-    place-items: center;
-
-    background-color: #421a3f;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
 }
 .interesses > div {
     width: 40%;
@@ -105,3 +105,46 @@ header > h1 {
 
     color: #ffffffb4;
 }
+
+/* footer */
+footer {
+    width: 80%;
+    height: 20rem;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #310d2d;
+}
+footer > ul > h4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+footer > ul > li {
+    margin-bottom: 0.4rem;
+}
+footer > ul > li > a{
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    color: #ffffffb4;
+}
+footer > div:nth-child(2){
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    
+    color: #ffffff7e;
+}
+footer > div:last-child {
+    width: calc(4rem * 2.5);
+    display: flex;
+    justify-content: space-between;
+}
+footer > div:last-child > a > img {
+    width: 4rem;
+}
+
