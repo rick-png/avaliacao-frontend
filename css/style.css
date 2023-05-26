@@ -47,7 +47,7 @@ header > h1 {
 }
 .infoPessoal > div:first-child {
     grid-column: 2;
-    width: 85%;
+    width: 100%;
     justify-self: flex-end;
 }
 .infoPessoal > div:last-child {
@@ -57,6 +57,7 @@ header > h1 {
 .infoPessoal > div:first-child > p:first-child {
     font-size: 2rem;
     color: #c71cc7;
+    text-align: end;
 }
 .infoPessoal > div:first-child > h2{
     font-size: 9rem;
